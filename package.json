@@ -6,6 +6,9 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "delay": "^5.0.0",
     "express": "^4.18.1",
     "nodemon": "^2.0.16",
     "onoff": "^6.0.3",
@@ -18,6 +21,7 @@
   },
   "main": "public/electron.js",
   "scripts": {
+    "react": "react-scripts start",
     "start": "concurrently --kill-others \"nodemon ./src/server.js\" \"react-scripts start\" ",
     "server": "nodemon ./src/server.js",
     "build": "react-scripts build",
